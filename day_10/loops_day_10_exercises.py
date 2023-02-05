@@ -320,3 +320,4 @@ for i in range(len(fruit_list)-1,-1,-1):
 # What are the total number of languages in the data
 # Find the ten most spoken languages from the data
 # Find the 10 most populated countries in the world
+# The three questions above are answered in the country_data.py file.

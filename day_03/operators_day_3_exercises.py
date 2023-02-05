@@ -144,8 +144,7 @@ print("You have lived for ",seconds, " seconds.")
 # 4 1 4 16 64
 # 5 1 5 25 125
 
-# can't figure out an exact answer, used ChatGPT and got a close match which doesnt give the first column
-# here it is: 
+# can't figure out an exact answer.
 for i in range(1, 6):
     for j in range(1, 5):
         print(i ** (j-1), end=" ")

@@ -59,5 +59,5 @@ print('age_set is smaller than age(the list): ', len(age_st) < len(age))  #defin
 # Use the split methods and set to get the unique words.
 sentence = 'I am a teacher and I love to inspire and teach people'
 print('Unique words in the sentence: ',set(sentence.split()))
-
-
+print('The number of unique words in the sentence:' , len(set(sentence.split())))
+# 10 unique words. 
