@@ -9,7 +9,7 @@ print(3-4) # subtraction
 print(3*4) # multiplication
 print(3/4) # division
 print(3**4) # exponentiation
-print(3 % 24) # modulos
+print(3 % 4) # modulos
 print(3//4) # floor division
 
 # 3. Write strings on the python interactive shell. The strings are the following:
