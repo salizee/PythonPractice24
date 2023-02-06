@@ -315,9 +315,82 @@ for i in range(len(fruit_list)-1,-1,-1):
     print(fruit_list[i])
 
 # Go to the data folder and use the countries_data.py file.
+# importing the countries_data list from the country_data.py file
+from country_data import countries_data
 
 
 # What are the total number of languages in the data
+language_count = 0
+for i in range(len(countries_data)):
+    language_count += len(countries_data[i]['languages'])
+print(language_count)
+# There are 368 languages(not accounting for duplicates)
+
+
+
 # Find the ten most spoken languages from the data
+
+
+# for most spoken languages, get a list of all languages and move from there.
+# I understood most spoken from the perspective of the number of countries a language is spoken in
+languages = []
+for i in range(len(countries_data)):
+    languages.extend(countries_data[i]['languages'])
+print(languages)
+
+#arranging the languages
+# using the list of languages to get the language count
+print('Count of languages: ',len(languages))
+
+# Accounting for duplicates
+print('Count of unique languages: ',len(set(languages)))  # 112
+
+languages.sort()
+
+# looping to get dict of languages
+lang = {}
+for language in languages:
+    if language in lang:
+        lang[language] += 1
+    else:
+        lang[language] = 1
+print(lang)
+# sorting the list of the tuples to get the most spoken languages
+sorted_lang = sorted(lang.items(), key= lambda x:x[1],reverse=True)
+sorted_lang # contains the languages arranged based on values
+# for the top ten, loop 
+
+for i in range(10):
+    print(sorted_lang[i])
+# option 2 for top ten : slicing the list, same answer
+sorted_lang[:10]
+
+# ('English', 91)
+# ('French', 45)
+# ('Arabic', 25)
+# ('Spanish', 24)
+# ('Portuguese', 9)
+# ('Russian', 9)
+# ('Dutch', 8)
+# ('German', 7)
+# ('Chinese', 5)
+# ('Italian', 4)
+
+
 # Find the 10 most populated countries in the world
-# The three questions above are answered in the country_data.py file.
+population = {}
+for i in range(len(countries_data)):
+    keys = countries_data[i]['name']
+    values = countries_data[i]['population']
+    population[keys] = values
+print(f'Countries populations: {population}')
+
+# sorting the list of the tuples to get the most spoken languages
+sorted_pop = sorted(population.items(), key= lambda x:x[1],reverse=True)
+ # contains the languages arranged based on values
+# for the top ten, another loop
+for i in range(10):
+    print(sorted_pop[i])
+# or slicing list
+sorted_pop[:10]
+print(f'most populated countries in the world with their populations: {sorted_pop[:10]} ')
