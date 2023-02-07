@@ -13,7 +13,7 @@ The breakdown for the topics that will covered by day are as follows:
 6. Tuples
 7. Sets
 8. Dictionaries
-9. Conditionals
+9. Conditionals 
 10.Loops
 11. Functions
 12. Modules
