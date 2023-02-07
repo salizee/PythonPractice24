@@ -14,16 +14,16 @@ The breakdown for the topics that will covered by day are as follows:
 7. Sets
 8. Dictionaries
 9. Conditionals 
-10.Loops
-11. Functions
-12. Modules
-13. List_comprehension
-14. Higher_order_functions
-15. Python_type_errors
-16. Python_date_time
-17. Exception_handling
-18. Regular_expressions
-19. File_handling
+11.Loops
+12. Functions
+13. Modules
+14. List_comprehension
+15. Higher_order_functions
+16. Python_type_errors
+17. Python_date_time
+18. Exception_handling
+19. Regular_expressions
+20. File_handling
 python for web
 20. Python_package_manager
 21. Classes_and_objects
