@@ -10,10 +10,10 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 map ,filter and reduce bring some form of functional programming to python. 
 All three functions take a function as the first argument and an iterable as the second argument of the function.
 map and filter return an iterable, eg a list , though it actually returns a map object that can be cast into a list. 
-map call the function in the first argument and returns the result of the function for each of the elements in the iterable.
+map calls the function in the first argument and returns the result of the function for each of the elements in the iterable.
 Filter on the other hand, only returns elements that satisfies the condition in the function argument. 
 reduce is a bit different as it returns a single answer i.e. it reduces the iterable to a single answer.
-It should be noted that map and filter the functions return map object and filter object respectively.
+It should be noted that map and filter functions return map objects and filter objects respectively.
 Printing map and filter objects without casting to a list will give the memory location of the object.
 '''
 # Explain the difference between higher order function, closure and decorator
