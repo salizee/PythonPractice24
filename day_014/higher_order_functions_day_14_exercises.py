@@ -27,7 +27,16 @@ A decorator is written as a function closure
 and implemented by giving the @ operator on top of the function.
 '''
 # Define a call function before map, filter or reduce, see examples.
-# Not sure what is needed here
+# From my understanding, 
+# I defined a function that will be called in the map function
+
+def square(x):
+    return x * x
+
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = list(map(square, numbers))
+print(squared_numbers)
+
 
 # Use for loop to print each country in the countries list.
 for country in countries:
@@ -63,13 +72,30 @@ print(f' The countries with land in their name: {contains_land}')
 # Use filter to filter out countries having exactly six characters.
 six_chars = list(filter(lambda x:len(x)==6,countries))
 print(f'The countries with six characters: {six_chars} ')
+
 # Use filter to filter out countries containing six letters and more in the country list.
 six_or_more_chars = list(filter(lambda x:len(x) >= 6,countries))
 print(f'Countries with six or more characters in their names: {six_or_more_chars} ')
+
+
 # Use filter to filter out countries starting with an 'E'
 starting_with_e = list(filter(lambda x:x.startswith('E'),countries))
 print(f' Countries starting with E in the list are: {starting_with_e}')
+
+
 # Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
+from functools import reduce
+
+numbers = [3, 5, 8, 2, 14]
+squared_even_numbers_sum = reduce(lambda x, y: x + y, 
+                                   list(filter(lambda x: x % 2 == 0, 
+                                                map(lambda x: x**2, numbers))))
+print(squared_even_numbers_sum)
+
+'''
+Here, I start by using the map() function to square each element of the numbers list. The output of map(lambda x: x**2, numbers) is then passed as an argument to filter(), which filters out the elements that are not even. Finally, the output of filter() is passed as an argument to reduce(), which adds up all the elements in the list to get the sum.
+As many list iterators can be chained, as long as each one produces an iterable that can be passed as an argument to the next function.
+'''
 
 
 # Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
