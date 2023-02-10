@@ -7,7 +7,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Explain the difference between map, filter, and reduce.
 '''
-map ,filter and reduce bring some form of functional programming to python. 
+Map ,filter and reduce bring some form of functional programming to python. 
 All three functions take a function as the first argument and an iterable as the second argument of the function.
 map and filter return an iterable, eg a list , though it actually returns a map object that can be cast into a list. 
 map calls the function in the first argument and returns the result of the function for each of the elements in the iterable.
