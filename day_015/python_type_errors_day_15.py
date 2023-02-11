@@ -16,5 +16,5 @@ Practised the different Error types on the Python interactive shell. The errors 
 
 
 
-Errors will be definitely be encountered as we continue the programming journey and handling them will from now on be more intuitive. 
+Errors will definitely be encountered as we continue the programming journey and handling them, will from now on, be more intuitive. 
 '''
