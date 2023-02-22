@@ -57,7 +57,7 @@ def is_valid_variable(name):
 # print(most_frequent_words(cleaned_text)) ''' 
  # [(3, 'I'), (2, 'teaching'), (2, 'teacher')] 
 sentence = '''%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'''
-pattern = r'[%@&$#;?!.,]'
+pattern = r'[^\w\s]'
 clean_sentence = re.sub(pattern,'',sentence)
 
 def most_frequent_words(text):
