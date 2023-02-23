@@ -1,5 +1,7 @@
 # Day 19: 30 days of python programming
 
+# importing required libraries
+import re, json, csv
 
 
 '''Write a function which count number of lines and number of words in a text.
@@ -9,7 +11,6 @@ c) Read donald_speech.txt file and count number of lines and words
 d) Read melania_trump_speech.txt file and count number of lines and words'''
 
 def count_words_lines(file):
-    import re
     with open(file) as f:
         lines = f.readlines()
         words = []
@@ -18,10 +19,10 @@ def count_words_lines(file):
             line = re.sub(r'[^\w\s]','',line)
             words.extend(line.split())
     print(f'The number of lines and words in the file are {len(lines)} and {len(words)} respectively')
-count_words_lines('melania_trump_speech.txt')
-count_words_lines('donald_speech.txt')
-count_words_lines('michelle_obama_speech.txt')
-count_words_lines('obama_speech.txt')
+count_words_lines('day_019/melania_trump_speech.txt')
+count_words_lines('day_019/donald_speech.txt')
+count_words_lines('day_019/michelle_obama_speech.txt')
+count_words_lines('day_019/obama_speech.txt')
 
 
 
@@ -51,7 +52,6 @@ def most_spoken_languages(file,n):
     '''
     Takes a filepath and an integer,n as arguments and returns the n most spoken languages in the world
     '''
-    import json
     with open(file) as f:
         list = json.loads(f.read())
     # looping to get dict of languages
@@ -65,7 +65,7 @@ def most_spoken_languages(file,n):
     sorted_lang = sorted(lang.items(), key= lambda x:x[1],reverse=True) # contains the languages arranged based on values
     result = [(item[1],item[0]) for item in sorted_lang]
     return result[:n]
-most_spoken_languages('day_19/countries_data.json',10)
+most_spoken_languages('day_019/countries_data.json',10)
 
 
 # Read the countries_data.json data file in data directory, create a function that creates a list of the ten most populated countries
@@ -100,7 +100,6 @@ def most_populated_countries(filename,n):
     '''
     Takes a file path and an integer,n as arguments and returns the n most populated countries in the world
     '''
-    import json
     with open(filename) as f:
         dic_list = json.loads(f.read())
     population = dict()
@@ -113,15 +112,15 @@ def most_populated_countries(filename,n):
     final_list = [{'country':item[0],'population':item[1]} for item in sorted_lt]
     return final_list[:n]
 
-most_populated_countries('day_19/countries_data.json',7)
+most_populated_countries('day_019/countries_data.json',7)
 
 
 
 
 # Exercises: Level 2
 # Extract all incoming email addresses as a list from the email_exchange_big.txt file.
-import re
-with open('day_19/email_exhange_big.txt') as f:
+
+with open('day_019/email_exhange_big.txt') as f:
     lines = f.readlines()
 email_addresses = []
 for line in lines:
@@ -172,18 +171,18 @@ def find_most_common_words(file,n=10):
     result = [(word[1],word[0]) for word in words_sorted]
     return result[:n]
 
-find_most_common_words('day_19/donald_speech.txt',5)
+find_most_common_words('day_019/donald_speech.txt',5)
 # function is up and running.
 
 # Use the function, find_most_frequent_words to find: 
 # a) The ten most frequent words used in Obama's speech
-print(find_most_common_words('day_19/obama_speech.txt')) 
+print(find_most_common_words('day_019/obama_speech.txt')) 
 # b) The ten most frequent words used in Michelle's speech 
-print(find_most_common_words('day_19/michelle_obama_speech.txt'))
+print(find_most_common_words('day_019/michelle_obama_speech.txt'))
 # c) The ten most frequent words used in Trump's speech 
-print(find_most_common_words('day_19/donald_speech.txt'))
+print(find_most_common_words('day_019/donald_speech.txt'))
 # d) The ten most frequent words used in Melina's speech
-print(find_most_common_words('day_19/melania_trump_speech.txt'))
+print(find_most_common_words('day_019/melania_trump_speech.txt'))
 
 
 
@@ -198,7 +197,6 @@ def clean_text(file):
     '''
     Returns all the words in a text after removing the punctuations and others
     '''
-    import re
     with open(file) as f:
         lines = f.readlines()
         words = []
@@ -209,38 +207,37 @@ def clean_text(file):
     return words
 
 
-clean_text('day_19/michelle_obama_speech.txt') # worked
+clean_text('day_019/michelle_obama_speech.txt') # worked
 
 # onto removing stop words
 def remove_stop_words(list):
+    '''Removes stop words, i.e. commonly used words that search engines are programmed to ignore, from a list of words'''
     stop_words = ['i','me','my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're", "you've", "you'll", "you'd", 'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', "she's", 'her', 'hers', 'herself', 'it', "it's", 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves', 'what', 'which', 'who', 'whom', 'this', 'that', "that'll", 'these', 'those', 'am', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does', 'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until', 'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into', 'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up','down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', "don't", 'should', "should've", 'now', 'd', 'll', 'm', 'o', 're', 've', 'y', 'ain', 'aren', "aren't", 'couldn', "couldn't", 'didn', "didn't", 'doesn', "doesn't", 'hadn', "hadn't", 'hasn', "hasn't", 'haven', "haven't", 'isn', "isn't", 'ma', 'mightn', "mightn't", 'mustn', "mustn't", 'needn', "needn't", 'shan', "shan't", 'shouldn', "shouldn't", 'wasn', "wasn't", 'weren', "weren't", 'won', "won't", 'wouldn', "wouldn't"]
     return [word for word in list if word not in stop_words]
 
-remove_stop_words(clean_text('day_19/michelle_obama_speech.txt'))  # handled
+remove_stop_words(clean_text('day_019/michelle_obama_speech.txt'))  # handled
 
-remove_stop_words(clean_text('day_19/michelle_obama_speech.txt'))
 # next, function for similarity
 def check_text_similarity(list_one,list_two):
+    '''Gives a percentage of similar words in two different lists'''
     res = [x for x in (list_one + list_two) if x in list_one and x in list_two]
     similar_words_percent = (len(res)/(len(list_one) + len(list_two))) * 100
     return similar_words_percent
 check_text_similarity(['apple','banana','mango','pawpaw'],['apple','mango','pear']) # worked.
 
 
-# combining the function for a big one: biggest I have tried so far:
+# combining the functions 
 def comparing_text_in_file_similarity(file_one,file_two):
+    '''Gives the percentage of similar words in two different files'''
     file_one_words = remove_stop_words(clean_text(file_one))
     file_two_words = remove_stop_words(clean_text(file_two))
     return check_text_similarity(file_one_words,file_two_words)
 
-comparing_text_in_file_similarity('day_19/michelle_obama_speech.txt','day_19/melania_trump_speech.txt') # Got 45.57% similarity. 
+comparing_text_in_file_similarity('day_019/michelle_obama_speech.txt','day_019/melania_trump_speech.txt') # Got 45.57% similarity. 
 # Find the 10 most repeated words in the romeo_and_juliet.txt
 # most common and most repeated are the same
 
-print(find_most_common_words('day_19/romeo_and_juliet.txt'))
-
-
-
+print(find_most_common_words('day_019/romeo_and_juliet.txt'))
 
 
 '''Read the hacker news csv file and find out:
@@ -248,9 +245,7 @@ a) Count the number of lines containing python or Python
 b) Count the number lines containing JavaScript, javascript or Javascript
 c) Count the number lines containing Java and not JavaScript'''
 
-import csv
-import re
-with open('day_19/hacker_news.csv',newline='') as f:
+with open('day_019/hacker_news.csv',newline='') as f:
     csv_reader = csv.reader(f,delimiter=',')
     python_rows = 0
     javascript_rows = 0
@@ -263,5 +258,5 @@ with open('day_19/hacker_news.csv',newline='') as f:
                 javascript_rows +=1
             elif re.findall(r'Java$',row[i]):
                 java_rows +=1
-print(f'the number of lines containing a,b and c respectively are: {python_rows},{javascript_rows} and {java_rows}')
+print(f'the number of lines containing a,b and c respectively are: {python_rows}, {javascript_rows} and {java_rows}')
 
