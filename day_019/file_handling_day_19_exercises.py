@@ -6,7 +6,7 @@
 All the files are in the data folder: a) Read obama_speech.txt file and count number of lines and words 
 b) Read michelle_obama_speech.txt file and count number of lines and words 
 c) Read donald_speech.txt file and count number of lines and words 
-d) Read melina_trump_speech.txt file and count number of lines and words'''
+d) Read melania_trump_speech.txt file and count number of lines and words'''
 
 def count_words_lines(file):
     import re
@@ -18,10 +18,13 @@ def count_words_lines(file):
             line = re.sub(r'[^\w\s]','',line)
             words.extend(line.split())
     print(f'The number of lines and words in the file are {len(lines)} and {len(words)} respectively')
-count_words_lines('day_19/melania_trump_speech.txt')
-count_words_lines('day_19/donald_speech.txt')
-count_words_lines('day_19/michelle_obama_speech.txt')
-count_words_lines('day_19/obama_speech.txt')
+count_words_lines('melania_trump_speech.txt')
+count_words_lines('donald_speech.txt')
+count_words_lines('michelle_obama_speech.txt')
+count_words_lines('obama_speech.txt')
+
+
+
 # Read the countries_data.json data file in data directory, create a function that finds the ten most spoken languages
 
 '''Your output should look like this
@@ -92,7 +95,7 @@ print(most_populated_countries(filename='./data/countries_data.json', 3))
 {'country': 'United States of America', 'population': 323947000}
 ]'''
 
-# for a general function
+
 def most_populated_countries(filename,n):
     '''
     Takes a file path and an integer,n as arguments and returns the n most populated countries in the world
@@ -230,7 +233,7 @@ def comparing_text_in_file_similarity(file_one,file_two):
     file_two_words = remove_stop_words(clean_text(file_two))
     return check_text_similarity(file_one_words,file_two_words)
 
-comparing_text_in_file_similarity('day_19/michelle_obama_speech.txt','day_19/melania_trump_speech.txt') # Got 45.57% similarity, Wow, almost plagiarised I dare say
+comparing_text_in_file_similarity('day_19/michelle_obama_speech.txt','day_19/melania_trump_speech.txt') # Got 45.57% similarity. 
 # Find the 10 most repeated words in the romeo_and_juliet.txt
 # most common and most repeated are the same
 
@@ -260,5 +263,5 @@ with open('day_19/hacker_news.csv',newline='') as f:
                 javascript_rows +=1
             elif re.findall(r'Java$',row[i]):
                 java_rows +=1
-print(f'the number if lines for a,b and c respectively are: {python_rows},{javascript_rows} and {java_rows}')
+print(f'the number of lines containing a,b and c respectively are: {python_rows},{javascript_rows} and {java_rows}')
 
