@@ -124,19 +124,22 @@ Without additional libraries it will be difficult, so you may try it with Beauti
 import requests
 from bs4 import BeautifulSoup
 
-url = "https://archive.ics.uci.edu/ml/datasets.php"
+url = 'https://archive.ics.uci.edu/ml/datasets.php'
 
-# Make a GET request to the website
+# Send a GET request to the URL and retrieve the HTML content
 response = requests.get(url)
+html_content = response.content
 
-# Parse the HTML content of the page
-soup = BeautifulSoup(response.content, 'html.parser')
+# Parse the HTML content using BeautifulSoup4
+soup = BeautifulSoup(html_content, 'html.parser')
 
-# Find the table containing the list of datasets
+# Find the table that contains the list of data sets
+table = soup.find('table', {'border': '1'})
 
-# Extract the data from each row of the table
-# work in progress
-
-
- 
+# Extract the name of each data set from the table rows, for now, a humble goal due to my current limited skills
+rows = table.find_all('tr')
+for row in rows:
+    cells = row.find_all('td')
+    name = cells[0].text.strip()
+    print(f'{name}')
 
