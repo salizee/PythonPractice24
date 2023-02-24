@@ -137,9 +137,10 @@ soup = BeautifulSoup(html_content, 'html.parser')
 table = soup.find('table', {'border': '1'})
 
 # Extract the name of each data set from the table rows, for now, a humble goal due to my current limited skills
-rows = table.find_all('tr')
+rows = table.find_all('tr')[1:]
 for row in rows:
     cells = row.find_all('td')
     name = cells[0].text.strip()
+    # Gives the names of all the datasets in the table
     print(f'{name}')
 
