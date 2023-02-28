@@ -107,54 +107,8 @@ It has firstname, lastname, incomes, expenses properties
 and it has total_income, total_expense, account_info, add_income, add_expense and account_balance methods. 
 Incomes is a set of incomes and its description. The same goes for expenses.
 '''
-# Bonus: Learnt @property decorator
-class PersonAccounts:
-    def __init__(self, firstname, lastname):
-        self.firstname = firstname
-        self.lastname = lastname
-        self.incomes = []
-        self.expenses = []
-
-    def add_income(self, amount, description):
-        self.incomes.append((amount, description))
-
-    def add_expense(self, amount, description):
-        self.expenses.append((amount, description))
-
-    @property
-    def total_income(self):
-        return sum(income[0] for income in self.incomes)
-
-    @property
-    def total_expense(self):
-        return sum(expense[0] for expense in self.expenses)
-
-    @property
-    def account_balance(self):
-        return self.total_income - self.total_expense
-
-    def account_info(self):
-        print(f"Account information for {self.firstname} {self.lastname}:")
-        print("Incomes:")
-        for income in self.incomes:
-            print(f"\t{income[0]} ({income[1]})")
-        print("Expenses:")
-        for expense in self.expenses:
-            print(f"\t{expense[0]} ({expense[1]})")
-        print(f"Total income: {self.total_income}")
-        print(f"Total expenses: {self.total_expense}")
-        print(f"Account balance: {self.account_balance}")
 
 
-account = PersonAccounts("Lukman", "Aliyu")
-
-account.add_income(300_000_000, "salary")
-account.add_income(50_000, "bonus")
-
-account.add_expense(2_000, "books")
-account.add_expense(10_000, "fuel")
-
-account.account_info()
 
 class PersonAccount:
     def __init__(self, firstname, lastname):
@@ -193,4 +147,13 @@ class PersonAccount:
         print("Total Expense: ", self.total_expense())
         print("Account Balance: ", self.account_balance())
 
+account = PersonAccount("Lukman", "Aliyu")
+
+account.add_income(300_000_000, "salary")
+account.add_income(50_000, "bonus")
+
+account.add_expense(2_000, "books")
+account.add_expense(10_000, "fuel")
+
+account.account_info()
 
