@@ -34,9 +34,8 @@ tables = soup.find_all('table', {'cellpadding':'3'})
 # We are targeting the table with cellpadding attribute with the value of 3
 # We can select using id, class or HTML tag , for more information check the beautifulsoup doc
 table = tables[0]
-table_json = json.dumps(table)
 with open('dataset_table.json','w') as f:
-    f.write(table_json)
+    json.dump(table,f)
 
 '''
 
