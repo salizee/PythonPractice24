@@ -8,8 +8,8 @@ The breakdown of the topics covered by day are as follows:
 |---|-----|
 |1| [Introduction](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_001/helloworld.py>)|
 |2| [Variables_builtin_functions](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_002/variables.py>)|
-|3| Operators|
-|4| Strings|
+|3| [Operators](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_003/operators_day_3_exercises.py>)|
+|4| [Strings](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_004/strings_day_4_exercises.py>)|
 |5| Lists|
 |6| Tuples|
 |7| Sets|
