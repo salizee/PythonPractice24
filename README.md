@@ -6,8 +6,8 @@ The breakdown of the topics covered by day are as follows:
 
 |Day|Topic/Concept|
 |---|-----|
-|1| Introduction|
-|2| Variables_builtin_functions|
+|1| [Introduction](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_001/helloworld.py>)|
+|2| [Variables_builtin_functions](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_002/variables.py>)|
 |3| Operators|
 |4| Strings|
 |5| Lists|
