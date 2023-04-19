@@ -24,13 +24,13 @@ The breakdown of the topics covered by day are as follows:
 |16| [Python_date_time](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_016/python_datetime_day_16_exercises.py>)|
 |17| [Exception_handling](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_017/day_17_exercises.py>)|
 |18| [Regular_expressions](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_018/regular_expressions_day_18_exercises.py>)|
-|19| [File_handling/python for web](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_019/file_handling_day_19_exercises.py>)|
-|20| [Python_package_manager](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_020/python_package_manager_day_20_exercises.py>)|
-|21| [Classes_and_objects](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_021/classes_and_objects_day_21_exercises.py>)|
-|22| [Web_scraping](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_022/web_scraping_day_22_exercises.py>)|
-|23| [Virtual_environment](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_023/virtual_environment_day_23_exercise.py>)|
-|24| [Statistics](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_024/numpy_day_24_exercises.ipynb>)|
-|25| [Pandas](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_025/pandas_day_25_exercises.ipynb>)|
+|19| [File_handling/python for web](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_019_File_handling/file_handling_day_19_exercises.py>)|
+|20| [Python_package_manager](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_020_Python_package_manager/python_package_manager_day_20_exercises.py>)|
+|21| [Classes_and_objects](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_021_Classes_and_objects/classes_and_objects_day_21_exercises.py>)|
+|22| [Web_scraping](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_022_Web_scraping/web_scraping_day_22_exercises.py>)|
+|23| [Virtual_environment](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_023_Virtual_environment/virtual_environment_day_23_exercise.py>)|
+|24| [Statistics](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_024_Statistics/numpy_day_24_exercises.ipynb>)|
+|25| [Pandas](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_025_Pandas/pandas_day_25_exercises.ipynb>)|
 |26| Python_web|
 |27| Python_with_mongodb|
 |28| API building|
