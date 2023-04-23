@@ -31,7 +31,7 @@ The breakdown of the topics covered by day are as follows:
 |23| [Virtual_environment](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_023_Virtual_environment/virtual_environment_day_23_exercise.py>)|
 |24| [Statistics](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_024_Statistics/numpy_day_24_exercises.ipynb>)|
 |25| [Pandas](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_025_Pandas/pandas_day_25_exercises.ipynb>)|
-|26| [Python_web](<>)|
+|26| [Python_web](<https://github.com/lukmanaj/30DaysOfPython/tree/main/flask_project>)|
 |27| Python_with_mongodb|
 |28| API building|
 |29| Building_API final|
