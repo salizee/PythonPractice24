@@ -32,7 +32,7 @@ The breakdown of the topics covered by day are as follows:
 |24| [Statistics](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_024_Statistics/numpy_day_24_exercises.ipynb>)|
 |25| [Pandas](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_025_Pandas/pandas_day_25_exercises.ipynb>)|
 |26| [Python_web](<https://github.com/lukmanaj/30DaysOfPython/tree/main/flask_project>)|
-|27| Python_with_mongodb|
+|27| [Python_with_mongodb](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_027_Python_with_mongodb/day_027_python_with_mongodb.md>)|
 |28| API building|
 |29| Building_API final|
 |30| Conclusions|
