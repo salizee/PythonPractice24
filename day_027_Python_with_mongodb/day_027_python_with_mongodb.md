@@ -2,6 +2,7 @@
 
 Learnt the difference between SQL and noSQL databases, Created an account on mongodb, connected the mongodb cluster to a flask application.
 The following are some of the sample code explored:
+
 ```py
 # let's import the flask
 from flask import Flask, render_template
