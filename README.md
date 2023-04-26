@@ -14,8 +14,8 @@ The breakdown of the topics covered by day are as follows:
 |6| [Tuples](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_006_Tuples/tuples_day_6_exercises.py>)|
 |7| [Sets](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_007_Sets/sets_day_7_exercises.py>)|
 |8| [Dictionaries](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_008_Dictionaries/dictionaries_day_8_exercises.py>)|
-|9| [Conditionals](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_009_Conditionals/conditionals_day_9_exercises.py>)|
-|10| [Loops](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_010_Loops/loops_day_10_exercises.py>)|
+|9| [Conditionals](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_009_Conditionals/conditionals_day_9_exercises.py)|
+|10| [Loops](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_010_Loops/loops_day_10_exercises.py)|
 |11| [Functions](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_011_Functions/functions_day_11_exercises.py)|
 |12| [Modules](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_012_Modules/modules_day_12_exercises.py)|
 |13| [List_comprehension](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_013_List_comprehension/list_comprehensions_day_13_exercises.py)|
