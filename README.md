@@ -22,8 +22,8 @@ The breakdown of the topics covered by day are as follows:
 |14| [Higher_order_functions](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_014_Higher_order_functions/higher_order_functions_day_14_exercises.py>)|
 |15| [Python_type_errors](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_015_Python_type_errors/python_type_errors_day_15.py>)|
 |16| [Python_date_time](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_016_Python_date_time/python_datetime_day_16_exercises.py>)|
-|17| [Exception_handling](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_017_Exception_handling/day_17_exercises.py>)|
-|18| [Regular_expressions](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_018_Regular_expressions/regular_expressions_day_18_exercises.py>)|
+|17| [Exception_handling](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_017_Exception_handling/day_17_exercises.py)|
+|18| [Regular_expressions](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_018_Regular_expressions/regular_expressions_day_18_exercises.py)|
 |19| [File_handling/python for web](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_019_File_handling/file_handling_day_19_exercises.py)|
 |20| [Python_package_manager](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_020_Python_package_manager/python_package_manager_day_20_exercises.py)|
 |21| [Classes_and_objects](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_021_Classes_and_objects/classes_and_objects_day_21_exercises.py)|
