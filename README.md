@@ -34,7 +34,7 @@ The breakdown of the topics covered by day are as follows:
 |26| [Python_web](<https://github.com/lukmanaj/30DaysOfPython/tree/main/flask_project>)|
 |27| [Python_with_mongodb](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_027_Python_with_mongodb/day_027_python_with_mongodb.md>)|
 |28| [API building](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_028_API%20building/day_028_api_building.md)|
-|29| Building_API final|
+|29| [Building_API final](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_029_Building_API_final/day_029_building_api_final.md)|
 |30| Conclusions|
 
 The aim is to provide a good background in the Python programming language as a foundation for data science or other use cases.
