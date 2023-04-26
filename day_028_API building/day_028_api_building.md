@@ -35,18 +35,12 @@ A browser is an HTTP client because it sends requests to an HTTP server (Web ser
 
 HTTP uses client-server model. An HTTP client opens a connection and sends a request message to an HTTP server and the HTTP server returns response message which is the requested resources. When the request response cycle completes the server closes the connection.
 
-![HTTP request response cycle](../images/http_request_response_cycle.png)
-
 The format of the request and response messages are similar. Both kinds of messages have
 
 - an initial line,
 - zero or more header lines,
 - a blank line (i.e. a CRLF by itself), and
 - an optional message body (e.g. a file, or query data, or query output).
-
-Let us an example of request and response messages by navigating this site:https://thirtydaysofpython-v1-final.herokuapp.com/. This site has been deployed on Heroku free dyno and in some months may not work because of high request. Support this work to make the server run all the time. 
-
-![Request and Response header](../images/request_response_header.png)
 
 ## Initial Request Line(Status Line)
 
@@ -77,7 +71,7 @@ A complete list of HTTP status code can be found [here](https://httpstatuses.com
 
 ### Header Fields
 
-As you have seen in the above screenshot, header lines provide information about the request or response, or about the object sent in the message body.
+Header lines provide information about the request or response, or about the object sent in the message body.
 
 ```sh
 GET / HTTP/1.1
