@@ -10,8 +10,8 @@ The breakdown of the topics covered by day are as follows:
 |2| [Variables_builtin_functions](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_002_Variables_builtin_functions/variables.py>)|
 |3| [Operators](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_003_Operators/operators_day_3_exercises.py>)|
 |4| [Strings](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_004_Strings/strings_day_4_exercises.py>)|
-|5| [Lists](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_005_Lists/lists_day_5_exercises.py>)|
-|6| [Tuples](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_006_Tuples/tuples_day_6_exercises.py>)|
+|5| [Lists](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_005_Lists/lists_day_5_exercises.py)|
+|6| [Tuples](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_006_Tuples/tuples_day_6_exercises.py)|
 |7| [Sets](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_007_Sets/sets_day_7_exercises.py)|
 |8| [Dictionaries](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_008_Dictionaries/dictionaries_day_8_exercises.py)|
 |9| [Conditionals](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_009_Conditionals/conditionals_day_9_exercises.py)|
