@@ -16,8 +16,8 @@ The breakdown of the topics covered by day are as follows:
 |8| [Dictionaries](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_008_Dictionaries/dictionaries_day_8_exercises.py>)|
 |9| [Conditionals](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_009_Conditionals/conditionals_day_9_exercises.py>)|
 |10| [Loops](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_010_Loops/loops_day_10_exercises.py>)|
-|11| [Functions](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_011_Functions/functions_day_11_exercises.py>)|
-|12| [Modules](<https://github.com/lukmanaj/30DaysOfPython/blob/main/day_012_Modules/modules_day_12_exercises.py>)|
+|11| [Functions](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_011_Functions/functions_day_11_exercises.py)|
+|12| [Modules](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_012_Modules/modules_day_12_exercises.py)|
 |13| [List_comprehension](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_013_List_comprehension/list_comprehensions_day_13_exercises.py)|
 |14| [Higher_order_functions](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_014_Higher_order_functions/higher_order_functions_day_14_exercises.py)|
 |15| [Python_type_errors](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_015_Python_type_errors/python_type_errors_day_15.py)|
