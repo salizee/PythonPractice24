@@ -5,7 +5,7 @@ list2 = []
 print(f' the two lists are {list1},{list2}')
 
 # Declare a list with more than 5 items
-top = ['Abubakar','Umar','Uthman','Aliyu','Sa\'d','Abdurrahman bn Awf','Zubayr']
+top = ['Abubakar','Umar','Uthman','Aliyu',"Sa'd",'Abdurrahman bn Awf','Zubayr']
 # Find the length of your list
 list_length = len(top)
 print(f'The length of the list is {list_length}') 
