@@ -6,10 +6,10 @@ print(' '.join(['Thirty','Days','Of','Python']))
 # option 2: less elegant 
 print('Thirty' + ' ' + 'Days' + ' ' + 'Of' + ' ' + 'Python')
 
-# Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'.
+# Concatenate the string 'Coding', 'For' , 'All' into a single string, 'Coding For All'.
 print(' '.join(['Coding','for','all']))
 
-# Declare a variable named company and assign it to an initial value "Coding For All".
+# Declare a variable named company and assign it to the initial value "Coding For All".
 company = 'Coding For All'
 # Print the variable company using print().
 print(company)
