@@ -1,7 +1,6 @@
 # 30DaysOfPython
 
 This is the repository for the exercises of the Arewa Data Science 30 Days of Python, part of stage one of the Arewa Data Science fellowship programme.
-The pattern is 5 days a week (weekdays only).
 The breakdown of the topics covered by day are as follows:
 
 |Day|Topic/Concept|

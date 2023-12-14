@@ -384,7 +384,7 @@ for i in range(len(countries_data)):
     keys = countries_data[i]['name']
     values = countries_data[i]['population']
     population[keys] = values
-print(f'Countries populations: {population}')
+print(f"Countries populations: {population}")
 
 # sorting the list of the tuples to get the most spoken languages
 sorted_pop = sorted(population.items(), key= lambda x:x[1],reverse=True)
@@ -394,4 +394,4 @@ for i in range(10):
     print(sorted_pop[i])
 # or slicing list
 sorted_pop[:10]
-print(f'most populated countries in the world with their populations: {sorted_pop[:10]} ')
+print(f"most populated countries in the world with their populations: {sorted_pop[:10]} ")
