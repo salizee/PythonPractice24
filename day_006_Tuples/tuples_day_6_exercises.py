@@ -2,7 +2,7 @@
 
 # Create an empty tuple
 tpl = tuple() # option 1: tuple function
-tpl1 = ()  # option 2: using the round brackets
+tpl_1 = ()  # option 2: using the round brackets
 
 # Create two tuples each containing names of your sisters and your brothers (imaginary siblings are fine)
 my_brothers = ('Umar','Uthman')
