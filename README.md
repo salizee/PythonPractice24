@@ -36,4 +36,4 @@ The breakdown of topics covered are as follows:
 |29| [Building_API final](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_029_Building_API_final/day_029_building_api_final.md)|
 |30| [Conclusions](https://github.com/lukmanaj/30DaysOfPython/blob/main/day_030_Conclusions/conclusions.md)|
 
-The aim is to provide a good background in the Python programming language as a foundation for data science or other use cases.
+This is to provide a good background in the Python programming language as a foundation for data science or other use cases.
