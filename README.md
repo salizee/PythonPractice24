@@ -1,7 +1,7 @@
 # 30DaysOfPython
 
 This is the repository for my attempt of the exercises of the Arewa Data Science 30 Days of Python, part of stage one of the Arewa Data Science fellowship programme.
-The breakdown of the topics covered, is as follows:
+Below is the breakdown of the topics covered:
 
 |Day|Topic/Concept|
 |---|-----|
