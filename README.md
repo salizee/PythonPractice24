@@ -1,4 +1,4 @@
-# 30DaysOfPython
+# PythonPractice
 
 This is the repository for my attempt of the exercises of the Arewa Data Science 30 Days of Python, part of stage one of the Arewa Data Science fellowship programme.
 Below is the breakdown of the concepts covered:
